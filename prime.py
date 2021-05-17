@@ -1,11 +1,12 @@
 import math
 primeList = [2]
+currentNumber = 3
 currentNumberIsPrime = True
 numberOfNumbersInPrimePrintList = 0
-printPrimeList = []
+printPrimeList = [2]
 printPrimeString = ''
-upperBound = 1000000
-for currentNumber in range(3, upperBound + 1):
+upperBound = 100
+while currentNumber < upperBound:
     for i in primeList:
         if currentNumber % i == 0:
             currentNumberIsPrime = False
